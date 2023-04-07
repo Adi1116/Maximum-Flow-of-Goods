@@ -1,3 +1,16 @@
+/*
+Problem Statement
+A company needs to transport a certain amount of goods from a source location to multiple destinations using a transportation network. 
+The network is represented as a directed graph, where each edge has a capacity that represents the maximum amount of goods that can be transported along that edge. 
+The company wants to maximize the flow of goods from the source to the destinations, subject to the capacity constraints of the edges.
+Write a program that uses the Depth-First Search algorithm to find the maximum flow of goods from the source to the destinations in the transportation network.
+
+
+*/
+
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -86,6 +99,24 @@ int main() {
     cout << "Max flow : " << g.maxFlow(source, sink)  << endl;
     return 0;
 }
+
+/*
+Input DATA
+6
+10
+0
+5
+0 1 16
+0 2 13
+1 2 10
+1 3 12
+2 1 4
+2 4 14
+3 2 9
+3 5 20
+4 3 7
+4 5 4
+*/
 
 
 
